@@ -7,3 +7,5 @@ More accurately it's LQR-I because integral action to prevent steady state error
 # Efficiency and stability
 Keep in mind that the code is basically the most simple way to implement such a solver. I used the Kronecker-Product to solve the Lyapunov-equation resulting from Newton's method, which is EXTREMELY inefficient and even numerically unstable, not to mention Newton's method isn't exactly the safest solver either. I highly recommend looking into the Bartels-Stewart algorithm in case you are interested in coding a similar solver. Its almost just as simple, much more efficient and safer. To replace Newton's method I recommend looking into optimization algorithms in general since the correct choice often depends on the problem at hand. For example a problem that one expects to have many local minima may best be solved using particle swarm optimization or other methods that make use of multiple pathfinders to weed out suboptimal solutions.
 
+# References
+I used several papers. All of them were freely available. Copies of them are in the references folder.
