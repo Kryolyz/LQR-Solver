@@ -1,5 +1,5 @@
 # LQR-Solver
-A program that creates feedback-controllers using a linear-quadratic cost function. The function is solved by turning it into a infinite-horizon continous riccati equation and using Newton's method. It's just the solving algorithm though, there is no way to directly change the input state-space data without changing and recompiling the code (there is no GUI), which means the code is nothing but an example of how to realize an algorithm for LQR.
+A program that creates feedback-controllers using a linear-quadratic cost function. The function is solved by turning it into a infinite-horizon continous riccati equation and using Newton's method. It's just the solving algorithm though, there is no way to directly change the input state-space data or weights matrices without changing and recompiling the code (there is no GUI), which means the code is nothing but an example of how to realize an algorithm for LQR.
 
 # LQR-I
 More accurately it's LQR-I because integral action to prevent steady state errors is included, but I consider that an absolute necessity for a functional controller and added it right after I was done.
